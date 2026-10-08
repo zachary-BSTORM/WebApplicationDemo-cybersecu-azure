@@ -16,7 +16,7 @@ namespace WebApplicationDemo
                 {
                     policy.WithOrigins(
                               "http://localhost:4200",                  // front en local
-                              "https://mon-front.azurewebsites.net")    // front déployé sur Azure
+                              "https://azure-front-demo-six.vercel.app/")    // front déployé sur Azure
                           .AllowAnyHeader()
                           .AllowAnyMethod();
                     // .AllowCredentials(); // seulement si cookies/auth, et jamais avec AllowAnyOrigin
