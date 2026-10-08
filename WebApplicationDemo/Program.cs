@@ -14,7 +14,7 @@ namespace WebApplicationDemo
             {
                 options.AddPolicy("FrontendPolicy", policy =>
                 {
-                    policy.WithOrigins("https://*.vercel.app/")    // front déployé sur Azure
+                    policy.WithOrigins("https://*.vercel.app")    // front déployé sur Azure
                           .AllowAnyHeader()
                           .AllowAnyMethod();
                     // .AllowCredentials(); // seulement si cookies/auth, et jamais avec AllowAnyOrigin
